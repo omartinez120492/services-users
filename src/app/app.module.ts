@@ -8,6 +8,8 @@ import { AddComponent } from './users/components/add/add.component';
 
 import { ShowuserComponent } from './users/components/showuser/showuser.component';
 import { ShowallComponent } from './users/components/showall/showall.component';
+import { ApiUndefinedComponent } from './api-undefined/api-undefined.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { ShowallComponent } from './users/components/showall/showall.component';
     UsersComponent,
     AddComponent,
     ShowuserComponent,
-    ShowallComponent
+    ShowallComponent,
+    ApiUndefinedComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
